@@ -8,6 +8,11 @@ public class BombSpawner : MonoBehaviour
     public Tilemap tilemap;
     public GameObject bombPrefab;
     GameObject player;
+     public int bombAmount = 1;
+    [Header("Explosion")]
+    public Explosion explosionPrefab;
+    public float explosionDuration = 2f;
+    public int explosionRadius = 2;
     // Start is called before the first frame update
 
     private void Awake()
@@ -27,12 +32,19 @@ public class BombSpawner : MonoBehaviour
         inputManager.Land.Bomb.performed += ctx => BombSpawnerAction();
     }
 
-    void BombSpawnerAction()
+     private void BombSpawnerAction()
     {
        // Vector3 worldPos = Camera.main.ScreenToWorldPoint(player.transform.position);
+    
         Vector3Int cell = tilemap.WorldToCell(player.transform.position);
         Vector3 cellCenterPos = tilemap.GetCellCenterWorld(cell);
-       
-        Instantiate(bombPrefab, cellCenterPos, Quaternion.identity);
+          GameObject bomb = Instantiate(bombPrefab, cellCenterPos, Quaternion.identity);
+        Explosion explosion = Instantiate(explosionPrefab , cellCenterPos, Quaternion.identity);
+        explosion.SetActiveRenderer(explosion.start);
+        explosion.DestroyAfter(explosionDuration);
+        Destroy(explosion.gameObject, explosionDuration);
+
+
+
     }
 }
