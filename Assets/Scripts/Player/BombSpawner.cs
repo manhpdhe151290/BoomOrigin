@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Tilemaps;
 public class BombSpawner : MonoBehaviour
 {
@@ -9,11 +10,20 @@ public class BombSpawner : MonoBehaviour
     public GameObject bombPrefab;
     GameObject player;
      public int bombAmount = 1;
+     public Button yourButton;
     [Header("Explosion")]
     public Explosion explosionPrefab;
     public float explosionDuration = 2f;
     public int explosionRadius = 2;
     // Start is called before the first frame update
+// public void Wrapper()
+//     {
+//         if (bombsRemaining > 0 )
+//         {
+//             Debug.Log("asdasd");
+//             StartCoroutine(PlaceBomb());
+//         }
+//     }
 
     private void Awake()
     {
@@ -23,6 +33,7 @@ public class BombSpawner : MonoBehaviour
     }
     void Start()
     {
+        // btn.onClick.AddListener(Wrapper);
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
