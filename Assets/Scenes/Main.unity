@@ -1142,7 +1142,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1060546558}
-  - component: {fileID: 1060546559}
   - component: {fileID: 1060546557}
   - component: {fileID: 1060546560}
   m_Layer: 0
@@ -1165,6 +1164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  animator: {fileID: 1967705997}
   movePoint: {fileID: 1288176582}
   whatStopMovemet:
     serializedVersion: 2
@@ -1186,25 +1186,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1060546559
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1060546556}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 71012c53351696e429502612dd921ecd, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1060546560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1221,12 +1202,13 @@ MonoBehaviour:
   bombPrefab: {fileID: 6874454648408609355, guid: a575d74e595aeec488f3f704bf3baf37,
     type: 3}
   inputKey: 32
-  bombFuseTime: 2
-  bombAmount: 2
+  bombFuseTime: 3
+  tilemap: {fileID: 1777001277}
+  bombAmount: 5
   explosionPrefab: {fileID: -4580300711060438695, guid: 61c7d9f9a728c5947939d79ead5aa6ab,
     type: 3}
   explosionDuration: 1
-  explosionRadius: 2
+  explosionRadius: 1
 --- !u!1 &1106899763
 GameObject:
   m_ObjectHideFlags: 0
@@ -4826,6 +4808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1967705996}
   - component: {fileID: 1967705995}
+  - component: {fileID: 1967705997}
   m_Layer: 0
   m_Name: Player Sprite
   m_TagString: Untagged
@@ -4873,7 +4856,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -711775398659219298, guid: 99862da1eb0cf41428c19e9ce2269db9,
+  m_Sprite: {fileID: 9061564225531320464, guid: c415efa76a7dc874eb8c314ef592c53c,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4899,6 +4882,25 @@ Transform:
   m_Father: {fileID: 1060546558}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1967705997
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967705994}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7566a41c79667bb4f95f5b8558c77c6f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2102872720
 GameObject:
   m_ObjectHideFlags: 0

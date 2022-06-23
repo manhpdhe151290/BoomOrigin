@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UI;
+
 public class BombController : MonoBehaviour
 
 {
     public Button yourButton;
         public GameObject bombPrefab;
+    
         public KeyCode inputKey =KeyCode.Space;
         public float bombFuseTime = 2f;
+        public Tilemap tilemap;
+        GameObject player;
         public int bombAmount =1;
         private int bombsRemaining;
          [Header("Explosion")]
@@ -29,6 +33,7 @@ public class BombController : MonoBehaviour
     }
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         yourButton.onClick.AddListener(Wrapper);
     }
 
@@ -42,8 +47,11 @@ public class BombController : MonoBehaviour
     private IEnumerator PlaceBomb(){
         Vector2 position =transform.position;
         position.x = Mathf.Round(position.x);
-        position.y = Mathf.Round(position.y);
-        GameObject bomb = Instantiate(bombPrefab,position, Quaternion.identity);
+        // position.y = Mathf.Round(position.y);
+        Vector3Int cell = tilemap.WorldToCell(player.transform.position);
+        Vector3 cellCenterPos = tilemap.GetCellCenterWorld(cell);
+      
+        GameObject bomb = Instantiate(bombPrefab,cellCenterPos, Quaternion.identity);
         bombsRemaining--;
         yield return new WaitForSeconds(bombFuseTime);
 
