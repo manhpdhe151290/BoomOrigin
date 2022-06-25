@@ -18,8 +18,13 @@ public class BombController : MonoBehaviour
         private int bombsRemaining;
          [Header("Explosion")]
     public Explosion explosionPrefab;
+    public LayerMask explosionLayerMask;
     public float explosionDuration = 2f;
     public int explosionRadius = 2;
+    [Header("Destructible")]
+    public Tilemap destructibleTiles;
+    public Destructible destructiblePrefab;
+
     // Start is called before the first frame update
     public void Wrapper()
     {
@@ -55,54 +60,54 @@ public class BombController : MonoBehaviour
         bombsRemaining--;
         yield return new WaitForSeconds(bombFuseTime);
 
-        position = bomb.transform.position;
-        position.x = Mathf.Round(position.x);
-        position.y = Mathf.Round(position.y);
-       Explosion explosion = Instantiate(explosionPrefab , position, Quaternion.identity);
+        // position = bomb.transform.position;
+        // position.x = Mathf.Round(position.x);
+        // position.y = Mathf.Round(position.y);
+       Explosion explosion = Instantiate(explosionPrefab , cellCenterPos, Quaternion.identity);
         explosion.SetActiveRenderer(explosion.start);
         explosion.DestroyAfter(explosionDuration);
 
-           Explode(position, Vector2.up, explosionRadius);
-        Explode(position, Vector2.down, explosionRadius);
-        Explode(position, Vector2.left, explosionRadius);
-        Explode(position, Vector2.right, explosionRadius);
+           Explode(cellCenterPos, Vector2.up, explosionRadius);
+        Explode(cellCenterPos, Vector2.down, explosionRadius);
+        Explode(cellCenterPos, Vector2.left, explosionRadius);
+        Explode(cellCenterPos, Vector2.right, explosionRadius);
 
-        Destroy(explosion.gameObject, explosionDuration);
-        Destroy(bomb);
+        Destroy(bomb.gameObject);
         bombsRemaining++;
 
     }
-      private void Explode(Vector2 position, Vector2 direction, int length)
+      private void Explode(Vector2 cellCenterPos, Vector2 direction, int length)
     {
         if (length <= 0) {
             return;
         }
 
-        position += direction;
+        cellCenterPos += direction;
 
-        // if (Physics2D.OverlapBox(position, Vector2.one / 2f, 0f, explosionLayerMask))
+      ClearDestructible(cellCenterPos);
+        // if (Physics2D.OverlapBox(cellCenterPos, Vector2.one / 2f, 0f, explosionLayerMask))
         // {
-        //     ClearDestructible(position);
+        //     ClearDestructible(cellCenterPos);
         //     return;
         // }
-          Explosion explosion = Instantiate(explosionPrefab, position, Quaternion.identity);
+          Explosion explosion = Instantiate(explosionPrefab, cellCenterPos, Quaternion.identity);
         explosion.SetActiveRenderer(length > 1 ? explosion.middle : explosion.end);
         explosion.SetDirection(direction);
         explosion.DestroyAfter(explosionDuration);
 
-        Explode(position, direction, length - 1);
+        Explode(cellCenterPos, direction, length - 1);
     }
-//  private void ClearDestructible(Vector2 position)
-//     {
-//         Vector3Int cell = destructibleTiles.WorldToCell(position);
-//         TileBase tile = destructibleTiles.GetTile(cell);
+ private void ClearDestructible(Vector2 cellCenterPos)
+    {
+        Vector3Int cell = destructibleTiles.WorldToCell(cellCenterPos);
+        TileBase tile = destructibleTiles.GetTile(cell);
 
-//         if (tile != null)
-//         {
-//             Instantiate(destructiblePrefab, position, Quaternion.identity);
-//             destructibleTiles.SetTile(cell, null);
-//         }
-//     }
+        if (tile != null)
+        {
+            Instantiate(destructiblePrefab, cellCenterPos, Quaternion.identity);
+            destructibleTiles.SetTile(cell, null);
+        }
+    }
 
     public void AddBomb()
     {
