@@ -29,12 +29,16 @@ public class PlayerController : MonoBehaviour
         {
             if (Mathf.Abs(joystick.Horizontal) >= .2f)
             {
+                animator.SetFloat("moveHorizontal", joystick.Horizontal);
                 if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(joystick.Horizontal, 0f, 0f), .2f, whatStopMovemet))
                 {
                     movePoint.position += new Vector3(joystick.Horizontal, 0f, 0f);
                 }
-            }else{
-                animator.SetFloat("moveHorizontal", joystick.Vertical);
+            }
+            else
+            {
+                animator.SetFloat("moveHorizontal", joystick.Horizontal);
+
             }
             if (Mathf.Abs(joystick.Vertical) >= .2f)
             {
@@ -43,9 +47,11 @@ public class PlayerController : MonoBehaviour
                 {
                     movePoint.position += new Vector3(0f, joystick.Vertical, 0f);
                 }
-            }else{
+            }
+            else
+            {
                 animator.SetFloat("moveVertical", -joystick.Vertical);
-            } 
+            }
         }
 
 

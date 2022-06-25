@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -484,6 +485,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      PlayerRedWalk_1: -3387031413343639996
+      PlayerRedWalk_15: 6510336088310438682
+      PlayerRedWalk_5: -5321909696083764040
+      PlayerRedWalk_7: -3943012843671661309
+      PlayerRedWalk_12: 4256812030753675766
+      PlayerRedWalk_8: -3397826146003677641
+      PlayerRedWalk_2: 424803194690471717
+      PlayerRedWalk_10: 1563432233361630483
+      PlayerRedWalk_11: -3596611211328183871
+      PlayerRedWalk_0: -3719433009349668311
+      PlayerRedWalk_13: -6067625942347895956
+      PlayerRedWalk_4: 7745408500511208834
+      PlayerRedWalk_9: -6776239569245849773
+      PlayerRedWalk_3: 8217273701640395558
+      PlayerRedWalk_14: 399711461180924593
+      PlayerRedWalk_6: -1615810300593537487
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
