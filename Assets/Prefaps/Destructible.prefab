@@ -147,3 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adca149d5c5799a4e92cecfad182657d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destructionTime: 1
+  itemSpawnChance: 1
+  spawnableItems:
+  - {fileID: 5934662299601885372, guid: 7aa41fe82c2a58f4faa2ac06b8bc9bf3, type: 3}
+  - {fileID: 7250385692786648100, guid: 9222dc05f81b2134cb7c1cefd08ead04, type: 3}
+  - {fileID: 5080771302589511037, guid: 938a2f19c9c4d09418647decc53cad78, type: 3}
