@@ -24,7 +24,8 @@ public class BombController : MonoBehaviour
     [Header("Destructible")]
     public Tilemap destructibleTiles;
     public Destructible destructiblePrefab;
-
+  
+   
     // Start is called before the first frame update
     public void Wrapper()
     {
