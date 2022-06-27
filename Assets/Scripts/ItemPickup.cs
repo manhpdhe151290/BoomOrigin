@@ -23,9 +23,9 @@ public class ItemPickup : MonoBehaviour
                 player.GetComponent<BombController>().explosionRadius++;
                 break;
 
-            // case ItemType.SpeedIncrease:
-            //     player.GetComponent<MovementController>().speed++;
-            //     break;
+             case ItemType.SpeedIncrease:
+                 player.GetComponent<PlayerController>().moveSpeed++;
+                 break;
         }
 
         Destroy(gameObject);
