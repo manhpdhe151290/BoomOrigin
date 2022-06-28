@@ -69,6 +69,7 @@ public class TileMapManager : MonoBehaviour
             switch (savedTile.Tile.Type)
             {
                 case TileType.Ground:
+                case TileType.Snow:
                     SetTile(_groundMap, savedTile);
                     break;
                 default:
@@ -80,7 +81,13 @@ public class TileMapManager : MonoBehaviour
         {
             switch (savedTile.Tile.Type)
             {
+                case TileType.Water:
+                case TileType.Water01:
+                case TileType.Water02:
+                case TileType.Water03:
                 case TileType.Block:
+                case TileType.Block01:
+                case TileType.Block02:
                     SetTile(_unitMap, savedTile);
                     break;
                 default:
