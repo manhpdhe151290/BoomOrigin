@@ -1,19 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 using UnityEngine.UI;
+using UnityEngine.Tilemaps;
 
 public class BombController : MonoBehaviour
 
 {
+     [Header("Bomb")]
     public Button yourButton;
-        public GameObject bombPrefab;
-    
+        public GameObject bombPrefab; 
         public KeyCode inputKey =KeyCode.Space;
         public float bombFuseTime = 2f;
         public Tilemap tilemap;
-        GameObject player;
+        private GameObject playerObj = null;
         public int bombAmount =1;
         private int bombsRemaining;
          [Header("Explosion")]
@@ -39,7 +39,10 @@ public class BombController : MonoBehaviour
     }
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+       if (playerObj == null)
+        {
+            playerObj = GameObject.FindGameObjectWithTag("Player");
+        }
         yourButton.onClick.AddListener(Wrapper);
     }
 
@@ -54,7 +57,7 @@ public class BombController : MonoBehaviour
         Vector2 position =transform.position;
         position.x = Mathf.Round(position.x);
         // position.y = Mathf.Round(position.y);
-        Vector3Int cell = tilemap.WorldToCell(player.transform.position);
+        Vector3Int cell = tilemap.WorldToCell(playerObj.transform.position);
         Vector3 cellCenterPos = tilemap.GetCellCenterWorld(cell);
       
         GameObject bomb = Instantiate(bombPrefab,cellCenterPos, Quaternion.identity);
