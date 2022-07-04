@@ -57,7 +57,7 @@ public class BombController : MonoBehaviour
         Vector2 position =transform.position;
         position.x = Mathf.Round(position.x);
         // position.y = Mathf.Round(position.y);
-        Vector3Int cell = tilemap.WorldToCell(new Vector3(player.transform.position.x, player.transform.position.y - 0.3f, player.transform.position.z));
+        Vector3Int cell = tilemap.WorldToCell(new Vector3(playerObj.transform.position.x, playerObj.transform.position.y - 0.3f, playerObj.transform.position.z));
         Vector3 cellCenterPos = tilemap.GetCellCenterWorld(cell);
       
         GameObject bomb = Instantiate(bombPrefab,cellCenterPos, Quaternion.identity);
