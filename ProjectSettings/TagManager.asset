@@ -5,19 +5,20 @@ TagManager:
   serializedVersion: 2
   tags:
   - Boom
+  - Explosion
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Ground Overlay
-  - 
+  - Stage
   - StopMovement
-  - 
-  - 
-  - 
+  - Bomb
+  - Explosion
+  - Item
   - 
   - 
   - 

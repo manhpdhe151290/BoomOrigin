@@ -1,17 +1,17 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
     public float moveSpeed = 5f;
     public Animator animator;
     public Transform movePoint;
     public LayerMask whatStopMovemet;
     public Joystick joystick;
     // Start is called before the first frame update
-
+ [Header("Sprites")]
+    public AnimatedSpriteRenderer spriteRendererDeath;
    
 
     void Start()
@@ -55,4 +55,32 @@ public class PlayerController : MonoBehaviour
 
 
     }
+      private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Explosion"))
+        {
+            DeathSequence();
+            Debug.Log('a');
+        }
+    }
+
+
+    private void DeathSequence()
+    {
+        enabled = false;
+        GetComponent<BombController>().enabled = false;
+        spriteRendererDeath.enabled = true;
+
+        Invoke(nameof(OnDeathSequenceEnded), 1.25f);
+    }
+
+    private void OnDeathSequenceEnded()
+    {
+        gameObject.SetActive(false);
+
+        // FindObjectOfType<GameManager>().CheckGameState();
+
+
+    }
+
 }
