@@ -9,7 +9,8 @@ using UnityEngine.Tilemaps;
 
 public class TileMapManager : MonoBehaviour
 {
-    [SerializeField] private Tilemap _groundMap, _unitMap;
+    [SerializeField] private Tilemap _groundMap, _unitMap, _frontOfPlayer, _groundOverlay, _obstacle
+        ;
     [SerializeField] private int _levelIndex;
 
     public void SaveMap()
@@ -21,6 +22,10 @@ public class TileMapManager : MonoBehaviour
 
         newLevel.GroundTiles = GetTilesFromMap(_groundMap).ToList();
         newLevel.UnitTiles = GetTilesFromMap(_unitMap).ToList();
+        newLevel.FrontOfPlayer = GetTilesFromMap(_frontOfPlayer).ToList();
+        newLevel.GrondOverlay = GetTilesFromMap(_groundOverlay).ToList();
+        newLevel.Obstacle = GetTilesFromMap(_obstacle).ToList();
+        
 
 
 
@@ -69,6 +74,18 @@ public class TileMapManager : MonoBehaviour
             switch (savedTile.Tile.Type)
             {
                 case TileType.Ground:
+                case TileType.Ground01:
+                case TileType.Ground02:
+                case TileType.Ground03:
+                case TileType.Ground04:
+                case TileType.Ground05:
+                case TileType.Ground06:
+                case TileType.Ground07:
+                case TileType.Ground08:
+                case TileType.Ground09:
+                case TileType.Ground10:
+                case TileType.Ground12:
+                case TileType.Ground11:
                 case TileType.Snow:
                     SetTile(_groundMap, savedTile);
                     break;
@@ -88,7 +105,58 @@ public class TileMapManager : MonoBehaviour
                 case TileType.Block:
                 case TileType.Block01:
                 case TileType.Block02:
+                case TileType.Tree10:
                     SetTile(_unitMap, savedTile);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
+
+        foreach (var savedTile in level.FrontOfPlayer)
+        {
+            switch (savedTile.Tile.Type)
+            {
+                case TileType.Tree01:
+                case TileType.Tree02:
+                case TileType.Tree03:
+                case TileType.Tree04:
+                case TileType.Tree05:
+                case TileType.Tree06:
+                case TileType.Tree07:
+                case TileType.Tree08:
+                case TileType.Tree09:
+                
+                    SetTile(_frontOfPlayer, savedTile);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
+
+        foreach (var savedTile in level.GrondOverlay)
+        {
+            switch (savedTile.Tile.Type)
+            {
+                case TileType.Bridge1:
+                case TileType.Bridge2:
+                case TileType.Bridge3:
+
+                    SetTile(_groundOverlay, savedTile);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
+
+        foreach (var savedTile in level.Obstacle)
+        {
+            switch (savedTile.Tile.Type)
+            {
+                case TileType.Stone1:
+                case TileType.Stone2:
+
+                    SetTile(_obstacle, savedTile);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
