@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
     {
         gameObject.SetActive(false);
 
-        // FindObjectOfType<GameManager>().CheckGameState();
+        FindObjectOfType<GameManager>().CheckGameState();
 
 
     }
