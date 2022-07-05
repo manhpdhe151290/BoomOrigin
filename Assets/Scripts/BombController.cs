@@ -102,12 +102,12 @@ public class BombController : MonoBehaviour
 
         cellCenterPos += direction;
 
-        ClearDestructible(cellCenterPos);
-        // if (Physics2D.OverlapBox(cellCenterPos, Vector2.one / 2f, 0f, explosionLayerMask))
-        // {
-        //     ClearDestructible(cellCenterPos);
-        //     return;
-        // }
+        // ClearDestructible(cellCenterPos);
+        if (Physics2D.OverlapBox(cellCenterPos, Vector2.one / 2f, 0f, explosionLayerMask))
+        {
+            ClearDestructible(cellCenterPos);
+            return;
+        }
         Explosion explosion = Instantiate(explosionPrefab, cellCenterPos, Quaternion.identity);
         explosion.SetActiveRenderer(length > 1 ? explosion.middle : explosion.end);
         explosion.SetDirection(direction);
