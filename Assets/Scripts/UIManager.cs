@@ -1,0 +1,46 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+public class UIManager : MonoBehaviour
+{
+   [SerializeField]
+    Text bombAmount;
+    [SerializeField]
+    Text Radius;
+    [SerializeField]
+    Text Speed;
+    // Start is called before the first frame update
+    int amount;
+    int radius;
+    int speed;
+    void Start()
+    {
+        amount = 1;
+        radius = 1;
+        speed = 4;
+       
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    public void SetScore()
+    {
+        amount++;
+        bombAmount.text =": " + amount;
+    
+    }
+    public void SetSpawn()
+    {
+        radius++;
+        Radius.text = ": "+ radius;
+    }
+    public void SetBullet()
+    {
+        speed++;
+    Speed.text = ": " + speed;
+    }
+}

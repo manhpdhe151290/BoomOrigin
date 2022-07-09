@@ -45,7 +45,7 @@ public class BombController : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
 
-        // yourButton.onClick.AddListener(Wrapper);
+        yourButton.onClick.AddListener(Wrapper);
     }
 
     // Update is called once per frame

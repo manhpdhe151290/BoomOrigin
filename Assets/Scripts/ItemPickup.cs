@@ -11,9 +11,14 @@ public class ItemPickup : MonoBehaviour
         SpeedIncrease,
     }
      private GameObject playerObj = null;
+     UIManager UIManager;
 
     public ItemType type;
 
+ void Start()
+    {
+         UIManager =FindObjectOfType<UIManager>();
+    }
     private void OnItemPickup(GameObject player)
     {
         playerObj = GameObject.FindGameObjectWithTag("Player");
@@ -22,14 +27,18 @@ public class ItemPickup : MonoBehaviour
             
            case ItemType.ExtraBomb:
                playerObj.GetComponent<BombController>().AddBomb();
+              
+               UIManager.SetScore();
                break;
 
            case ItemType.BlastRadius:
                playerObj.GetComponent<BombController>().explosionRadius++;
+              UIManager.SetSpawn(); 
                break;
 
             case ItemType.SpeedIncrease:
                 playerObj.GetComponent<PlayerController>().moveSpeed++;
+                UIManager.SetBullet();
                 break;
         }
         
