@@ -1,0 +1,3432 @@
+fileFormatVersion: 2
+guid: 02c8790759624cc499ec700d3b58a196
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BombsRoation_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 214
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679c186c83e61de468bfdaebb6c9c5b7
+      internalID: -870741629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 214
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aeaf2848059f5e4b8968e6e860db710
+      internalID: 1172180105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 214
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7d97ac6c7a4d345912036d9ca295c8
+      internalID: -519579222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 214
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6713924f7ca2afb4fad827acc22b4fb1
+      internalID: -449528978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_4
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 221
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921c189217252614b87ef9394b53e4ad
+      internalID: -1979103833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f40db9df2a2e4840911d1ee185ef1a8
+      internalID: -1306835332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_6
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 214
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.499999, y: 0.23971939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa5e2e021f68254488d412e67cf434d
+      internalID: 1619296911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_7
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 214
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.499999, y: 0.26140913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ae799aa839fb440967ded36f753864
+      internalID: 875290933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_8
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 214
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.500001, y: 0.22554207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f6e768be1377647844121f199afe97
+      internalID: 1106949917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_9
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 214
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.47688904, y: 0.23998769}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec245004a68ef9409f3e3800547bf2e
+      internalID: -1599452897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 214
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.500002, y: 0.25443268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8d0a7ae37dd684096ce1dd886d8fed
+      internalID: -1479062401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_11
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 214
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.500002, y: 0.26887766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1509959b98c67864a8f22ffb969f8695
+      internalID: 1531058783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_12
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 214
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.500001, y: 0.22554207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc67f8ce4a40424ea15883f7954ddef
+      internalID: -1941060836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_13
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 214
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.47689006, y: 0.26887766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324e52bd3f665734bbb94bf068f919ab
+      internalID: 1073414421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_14
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 214
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5000019, y: 0.22554207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5a7d460cc2ee245b957c8cfdc57c5a
+      internalID: 291390442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_15
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 214
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5000019, y: 0.23998769}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50617c885db21845893988035552553
+      internalID: -1932245388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_16
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 214
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.45377603, y: 0.22554207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de8ebd50f5a3ec44b4c1fbd0f137906
+      internalID: 1215678132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_17
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 214
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.4537781, y: 0.23998769}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267eade00338cdd45a970acd97f07c37
+      internalID: -199375294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_18
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 214
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548394fedb80f9f4d8459a0b04e033ff
+      internalID: 2013848013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_19
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 214
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdfe1302aa42510408b9d267a8e44cc9
+      internalID: 955258492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_20
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 185
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e7a320e3c6b0144bf920f350141e4e
+      internalID: 1877021522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_21
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 185
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9af7e56058992e44a01e927eb5726a8
+      internalID: 1196557891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_22
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 185
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e5d76c2467ffd4fa234242ec0bf3d6
+      internalID: 893732072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_23
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 185
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb767ea762cbe454597dc13ce5a15910
+      internalID: -1558238955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_24
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 185
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229e9bb595d14d742b901e570f60d545
+      internalID: 19441473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_25
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 185
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08cf5bd84ac7b2a429b5a9de3984b3a6
+      internalID: 2094514717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_26
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 185
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158f9a52cae57ed4eb589bd0ef74cc97
+      internalID: 2085895449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_27
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 185
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54aa9497a59b2346a17092cfababdc2
+      internalID: 569650784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_28
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 185
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0feb3af6556784e91befc12b01c8a8
+      internalID: -1734083334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_29
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 185
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767579fd45348de4ba7b1514fef94e17
+      internalID: -1564097657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_30
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 185
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9922d8a3078ce094d98ae6a143804e6d
+      internalID: 1348848520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_31
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 185
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d0e0d3c169ea64ab9a064621c55a62
+      internalID: -776024803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_32
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 185
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632c6de5d1a09c048855fa89f2ca2312
+      internalID: 1220516012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_33
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 185
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b967bda6f0df984882948ae398324ba
+      internalID: -1035227442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_34
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 185
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a49634fac97f54abf70058485fa54e
+      internalID: -2061842053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_35
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 185
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9f35428f70e46488e556d747261438
+      internalID: -829779884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_36
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 185
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc19572391e8474186df3568fffe27d
+      internalID: -1598426832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_37
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 185
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785403a204bd33a4ebe1f9a2478f4879
+      internalID: -206475751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_38
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 185
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c130e22b01fa2f74b854964d4a514106
+      internalID: 579433791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_39
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 185
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63df7368c851a54a9e05d02a4a45df4
+      internalID: 1666995899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_40
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 185
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e1b04173c9baf4db53830955d4cd78
+      internalID: -1450227420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_41
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 185
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5ea6c4280ab9d4cb818846c87cbbbc
+      internalID: 1853143440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_42
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 185
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2421b54254131714cbc1e8b8f0199226
+      internalID: 1720618348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_43
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 185
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919959113f6ae83458bc8a3deaf81224
+      internalID: 1110239697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_44
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 185
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98e55e8d7a5b18439b17a4bcd05df7a
+      internalID: 1595447847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_45
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 160
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f6309768f65e646965e160bcf89050
+      internalID: 1411033278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_46
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 160
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bf8f9b317d6984a96be1c9d29d131b
+      internalID: -6578900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_47
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 168
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210ee68b4f7d08e4aba1aa02ca0db529
+      internalID: 1202085280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_48
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 168
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98a726b7992ba94fbf4c8ec01fd3851
+      internalID: -1273231045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_49
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2700b3cb3e699479e854a1b8599c62
+      internalID: 34394646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_50
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 160
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff637ea10c0e33499c163d872c0ff18
+      internalID: 894943517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_51
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0ab4b7b40d2f5418d8ba97bf14e0e0
+      internalID: -612646092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_52
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 160
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1974cddef0a484da0c3c1734f4eed9
+      internalID: -302838731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_53
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 168
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57888d609e7dc9041815f0cbfcba5eb4
+      internalID: 12685226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_54
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 168
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948ee924019154f40b306f84346374e0
+      internalID: 305553502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_55
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 167
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9723d1d860b7b774783f744a2bc2b1aa
+      internalID: -495080206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_56
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 168
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b72d4f97f3da9744afd55b0fbb77b77
+      internalID: 1765042743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_57
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 168
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ca6208af7bf9b4ebbfcf65385c0d61
+      internalID: 1769626124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_58
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 167
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4608d26e22532b439e69f46533f37e9
+      internalID: -712003152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_59
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 168
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96d81af325f52447aabae44b3038e5e
+      internalID: 1527304656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_60
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 168
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7267e7c6dbfd81c4693b930ae0879476
+      internalID: -1969594698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_61
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 167
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42960728664f8c440ae0c4d80a74b03b
+      internalID: -1196227070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_62
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 160
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3c0daea748802458712241ce557e48
+      internalID: -360122727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_63
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 160
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a66b73e53d70046b87128c4ea24051
+      internalID: -679349910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_64
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 160
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dc0d7c867fa874d973cca89ec0a847
+      internalID: 1282229743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_65
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 160
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a835852a9f92ed84f9a9b475784144c4
+      internalID: -668873817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_66
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90be8c910306154489029c94fd281437
+      internalID: 796441882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_67
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 160
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33de526cee6e1e541b56034c8a339962
+      internalID: 239992108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_68
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 160
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ad6255eb021e34a834b4f66b7f5c87
+      internalID: 1327663399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_69
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 160
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbdbc4825d5bf447a2123293facf26d
+      internalID: 733980879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_70
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 160
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a261808051f3894bafcc8691ef7cb0c
+      internalID: 1546139990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_71
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 160
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa4ab08d794a4a45a0db9ec7d19ce13
+      internalID: 743982174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_72
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 160
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d18725b4df4e146995ea968d1a570c
+      internalID: -1789191449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_73
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 160
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ba037c9a63cd24782ea1d1b683fbea
+      internalID: 262073933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_74
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c062838f3640ad346b4b4902e8c6abe5
+      internalID: 731917327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_75
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67aac22344654a0458f599d2e7076f10
+      internalID: -1953594251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_76
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05227ef5d3fe0ec42929066a28b22c7e
+      internalID: 1384853149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_77
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3861d67ba8cdf428eda686ca0a57dd
+      internalID: -932638442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_78
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13733999a38ae734f829cd86b4d11e0d
+      internalID: 559962703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_79
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a71a15bc0ed8f43ae7b80b1ac9642e
+      internalID: -647831474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_80
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e244b84e4d5915345b6fc6eac690409e
+      internalID: -2073914225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_81
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232a211b5f717204f9961358e637f7e7
+      internalID: 1563357970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_82
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc03a3eb9bc47a419c347f1cb55570b
+      internalID: -1583697311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_83
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eaa491fb0ff19845a4bfb6b7c8a0547
+      internalID: 1151871237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_84
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f97143b4cb2f15438e3666328fb5f7e
+      internalID: 1413571123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_85
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3aec76fc332d74faad7d4c351336f7
+      internalID: 220646774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_86
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d5898d45da2e146a1ab8723a6ed80e
+      internalID: -1284680585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_87
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3924f84dfbd694a9f4a05173aa8f44
+      internalID: 1487035683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_88
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d2edd2e40613b4288430e6c127091f
+      internalID: -882305316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_89
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36fd513e9f18464ebeb09b636bc77a3
+      internalID: -8235838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_90
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c62a3d70a65a1e46b4e39231254d1cc
+      internalID: -584893806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_91
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf826fb4d3383b45884dafd093fbc62
+      internalID: 1273115691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_92
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ebafba1ad02e147961a406e61e4f68
+      internalID: 744838528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_93
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60607ade58fef2348878f40b0f3de4e7
+      internalID: 972303595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_94
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 107
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad62c62cd67815469b57d670ea979bb
+      internalID: -1914565302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_95
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 107
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaca12939e09758419f422cb4e2f08a9
+      internalID: -605380958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_96
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 107
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862c108bfcca23b468ea54f02e286aa1
+      internalID: -1013169573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_97
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 107
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fd246806175b54183ba0618360d64f
+      internalID: 1932103409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_98
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 107
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e5d95823811014c88a9c9a76150f0a
+      internalID: 203250042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_99
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 107
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb63af9864b3c741b216f8086a131d9
+      internalID: 1949943801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_100
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 107
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d58c42156789ea44a5c12f1aa90905d
+      internalID: 971118673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_101
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 107
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16045bc025e924c4d8dea164cdc47e60
+      internalID: 1086503162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_102
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 107
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530bad91b0b9d5d488e06b51fb1fea37
+      internalID: -219300723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_103
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 107
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a967404bafefb478deeea5ab4bf88d
+      internalID: 1271604649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_104
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 107
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7bf5424baf641448de1f4cda1018af
+      internalID: 1187432478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_105
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 107
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd6745e0831c6d4588c4dc0ff2b3d6f
+      internalID: 38382911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_106
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 107
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b84c540de9c2048bf0af439aa0864e
+      internalID: -187480802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_107
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 107
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701edc8ac31551346accfaa2dbca1718
+      internalID: -2058451004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_108
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 107
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de6b50b11cfa6a40ab23e2c8b0cde6e
+      internalID: -688515087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_109
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 107
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1739718d8af9aaf4796c810514bd17ac
+      internalID: -698283377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_110
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 107
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992ca1ccb1a59534985b7c2366dc712f
+      internalID: 194928869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_111
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 107
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8a4f56991f83e4ea2cfa846353dbf6
+      internalID: -678354837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_112
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 107
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb17df1421c27844a2ee0895987f958
+      internalID: -534986713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_113
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 107
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c37db6641dfcf47b301aec2d893c24
+      internalID: -1713292940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_114
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 107
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290d4ba0c5ca06a4fad252441f9ec0e9
+      internalID: -2059806804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_115
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 77
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ea0a879131c07448891a908dcb05c5
+      internalID: -1429979365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_116
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 77
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46301ac424ed21048a299df1763625b2
+      internalID: -429725927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_117
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 77
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9079da2a9456321428fb790342be9ce7
+      internalID: 387446674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_118
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 77
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecc8bf32225a7a409300f93404d8b01
+      internalID: 1466787794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_119
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 77
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18fe279377a6903478d3c996d8cd2972
+      internalID: -1808171204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_120
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 77
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e53a5beb34fb14093af2b905031de4
+      internalID: -934388003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_121
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 77
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5f85d2a5855b140bf0d5e9e05a98a7
+      internalID: -489577198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_122
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 77
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d587b1ba3e1ff274ba116b902b0621a6
+      internalID: -1334653865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_123
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 77
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1471835da5b5f6b458fc71c18e67190c
+      internalID: -1225290690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_124
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 47
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e08c1a7c97e214ea672fdf6721fc84
+      internalID: -81899887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_125
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 47
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af87ee99b366f6f4e90791b8e1e98b3f
+      internalID: -1846068367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_126
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 47
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d5c86b9b481b3428efe8be9ac722fc
+      internalID: 634361331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_127
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 47
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9899e9374f56bd240b48a098d6797078
+      internalID: -1951276428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_128
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 47
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288965bb3b97acb45bb9653be62a093d
+      internalID: -45830194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_129
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 47
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213f6dbaa9d88a84cb904fbdf3455c04
+      internalID: -979602525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_130
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 47
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c9da407f353404f99a4594b40f4a09
+      internalID: 1178405113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_131
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 47
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93b76a385c5b9347b3a19b2dc384cfd
+      internalID: -520049999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_132
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 47
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85788afbb3b99dd4eb2f5bd6bc33837d
+      internalID: 2024145102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_133
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 30
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bfbfcd90183744783224eca8802fcc
+      internalID: 1214523205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_134
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 26
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e04e453715eb7142b2e7c67e0a2a9c0
+      internalID: 1498452882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_135
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 23
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd5838899553114ca67fff3cd7d36c6
+      internalID: -1491812790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_136
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 22
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cbff51243096f429e27fc0b1ffde29
+      internalID: -152138744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_137
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 14
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacdac20764e87747b66c5421cd93104
+      internalID: -1008887681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_138
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 6
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e354f815e9a7f1f4fb0629a66d94a131
+      internalID: -121758739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_139
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 6
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b76b10f33f432478c28c8251f82208
+      internalID: 526041515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_140
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 13
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d94df13f295cb94583e0008d9061de0
+      internalID: -1023741021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_141
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 13
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594bfc947a47c224eb3740147f0f8d29
+      internalID: -1114776457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_142
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 13
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068384252b604414f833706bf83e47af
+      internalID: 1106135662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_143
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 13
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b3b706223afbc4d8a3efb423c1c0bd
+      internalID: 1049839126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_144
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 13
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888da8f1f0dd81f408d55aeef0647cb7
+      internalID: 1815002096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_145
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 10
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c87c98d19dfb07418fd95f79a6d8887
+      internalID: -18197964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_146
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 13
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d85573d86cdbe24b985a3c14280fb0a
+      internalID: -1149685208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_147
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 13
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d48173e5d038064f9abce6e83192d80
+      internalID: -1843314949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_148
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 13
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0503b84454945749b4a7f2c43a335cb
+      internalID: -1642445681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_149
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 10
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3abc3eeb2de2c14bb58999b29cdac5e
+      internalID: -1460549905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombsRoation_150
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 6
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3ec9470af4df54da6e5753ad26133e
+      internalID: -1850330736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BombsRoation_92: 744838528
+      BombsRoation_139: 526041515
+      BombsRoation_57: 1769626124
+      BombsRoation_9: -1599452897
+      BombsRoation_38: 579433791
+      BombsRoation_4: -1979103833
+      BombsRoation_81: 1563357970
+      BombsRoation_114: -2059806804
+      BombsRoation_26: 2085895449
+      BombsRoation_34: -2061842053
+      BombsRoation_148: -1642445681
+      BombsRoation_132: 2024145102
+      BombsRoation_24: 19441473
+      BombsRoation_47: 1202085280
+      BombsRoation_116: -429725927
+      BombsRoation_138: -121758739
+      BombsRoation_56: 1765042743
+      BombsRoation_82: -1583697311
+      BombsRoation_131: -520049999
+      BombsRoation_135: -1491812790
+      BombsRoation_121: -489577198
+      BombsRoation_76: 1384853149
+      BombsRoation_119: -1808171204
+      BombsRoation_68: 1327663399
+      BombsRoation_149: -1460549905
+      BombsRoation_55: -495080206
+      BombsRoation_0: -870741629
+      BombsRoation_93: 972303595
+      BombsRoation_65: -668873817
+      BombsRoation_41: 1853143440
+      BombsRoation_85: 220646774
+      BombsRoation_100: 971118673
+      BombsRoation_150: -1850330736
+      BombsRoation_146: -1149685208
+      BombsRoation_25: 2094514717
+      BombsRoation_60: -1969594698
+      BombsRoation_123: -1225290690
+      BombsRoation_48: -1273231045
+      BombsRoation_66: 796441882
+      BombsRoation_7: 875290933
+      BombsRoation_33: -1035227442
+      BombsRoation_32: 1220516012
+      BombsRoation_5: -1306835332
+      BombsRoation_44: 1595447847
+      BombsRoation_88: -882305316
+      BombsRoation_84: 1413571123
+      BombsRoation_105: 38382911
+      BombsRoation_30: 1348848520
+      BombsRoation_54: 305553502
+      BombsRoation_117: 387446674
+      BombsRoation_107: -2058451004
+      BombsRoation_91: 1273115691
+      BombsRoation_31: -776024803
+      BombsRoation_42: 1720618348
+      BombsRoation_59: 1527304656
+      BombsRoation_89: -8235838
+      BombsRoation_49: 34394646
+      BombsRoation_13: 1073414421
+      BombsRoation_69: 733980879
+      BombsRoation_23: -1558238955
+      BombsRoation_71: 743982174
+      BombsRoation_53: 12685226
+      BombsRoation_147: -1843314949
+      BombsRoation_125: -1846068367
+      BombsRoation_128: -45830194
+      BombsRoation_63: -679349910
+      BombsRoation_46: -6578900
+      BombsRoation_101: 1086503162
+      BombsRoation_143: 1049839126
+      BombsRoation_115: -1429979365
+      BombsRoation_140: -1023741021
+      BombsRoation_77: -932638442
+      BombsRoation_27: 569650784
+      BombsRoation_64: 1282229743
+      BombsRoation_52: -302838731
+      BombsRoation_74: 731917327
+      BombsRoation_137: -1008887681
+      BombsRoation_102: -219300723
+      BombsRoation_141: -1114776457
+      BombsRoation_118: 1466787794
+      BombsRoation_144: 1815002096
+      BombsRoation_124: -81899887
+      BombsRoation_11: 1531058783
+      BombsRoation_2: -519579222
+      BombsRoation_120: -934388003
+      BombsRoation_12: -1941060836
+      BombsRoation_73: 262073933
+      BombsRoation_106: -187480802
+      BombsRoation_133: 1214523205
+      BombsRoation_17: -199375294
+      BombsRoation_15: -1932245388
+      BombsRoation_21: 1196557891
+      BombsRoation_35: -829779884
+      BombsRoation_19: 955258492
+      BombsRoation_43: 1110239697
+      BombsRoation_70: 1546139990
+      BombsRoation_61: -1196227070
+      BombsRoation_86: -1284680585
+      BombsRoation_104: 1187432478
+      BombsRoation_90: -584893806
+      BombsRoation_97: 1932103409
+      BombsRoation_127: -1951276428
+      BombsRoation_110: 194928869
+      BombsRoation_40: -1450227420
+      BombsRoation_78: 559962703
+      BombsRoation_22: 893732072
+      BombsRoation_103: 1271604649
+      BombsRoation_79: -647831474
+      BombsRoation_28: -1734083334
+      BombsRoation_1: 1172180105
+      BombsRoation_51: -612646092
+      BombsRoation_50: 894943517
+      BombsRoation_29: -1564097657
+      BombsRoation_126: 634361331
+      BombsRoation_45: 1411033278
+      BombsRoation_3: -449528978
+      BombsRoation_94: -1914565302
+      BombsRoation_20: 1877021522
+      BombsRoation_14: 291390442
+      BombsRoation_111: -678354837
+      BombsRoation_112: -534986713
+      BombsRoation_75: -1953594251
+      BombsRoation_113: -1713292940
+      BombsRoation_8: 1106949917
+      BombsRoation_96: -1013169573
+      BombsRoation_134: 1498452882
+      BombsRoation_136: -152138744
+      BombsRoation_129: -979602525
+      BombsRoation_142: 1106135662
+      BombsRoation_62: -360122727
+      BombsRoation_72: -1789191449
+      BombsRoation_108: -688515087
+      BombsRoation_87: 1487035683
+      BombsRoation_95: -605380958
+      BombsRoation_36: -1598426832
+      BombsRoation_99: 1949943801
+      BombsRoation_67: 239992108
+      BombsRoation_39: 1666995899
+      BombsRoation_10: -1479062401
+      BombsRoation_122: -1334653865
+      BombsRoation_83: 1151871237
+      BombsRoation_16: 1215678132
+      BombsRoation_6: 1619296911
+      BombsRoation_98: 203250042
+      BombsRoation_130: 1178405113
+      BombsRoation_145: -18197964
+      BombsRoation_109: -698283377
+      BombsRoation_58: -712003152
+      BombsRoation_18: 2013848013
+      BombsRoation_37: -206475751
+      BombsRoation_80: -2073914225
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
