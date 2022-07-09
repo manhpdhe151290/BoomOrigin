@@ -1,0 +1,34 @@
+{
+    "name": "InputManager",
+    "maps": [
+        {
+            "name": "Land",
+            "id": "e2373152-6b60-4b6c-a73a-da57fa8d1298",
+            "actions": [
+                {
+                    "name": "Bomb",
+                    "type": "Button",
+                    "id": "f203054d-b7e6-40a7-84bb-b901294490a4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "18a09eb6-c4c2-4bbb-a499-58a758999ed6",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Bomb",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
