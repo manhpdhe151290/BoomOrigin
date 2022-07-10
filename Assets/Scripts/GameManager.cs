@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public float elapsedTime = 0.0f;
     public int enemies = 0;
     public float countTime = 0f;
+      UIManager UIManager;
     void spawnEnemy()
     {
         EnemyLevel1.Instance.spawnEnemy();
@@ -23,8 +24,11 @@ public class GameManager : MonoBehaviour
            spawnEnemy();
            elapsedTime = 0.0f;
            enemies++;
+        //    UIManager.SetTiming(countTime);
         }
+        
     }
+    
     public void CheckGameState()
     {
         int aliveCount = 0;

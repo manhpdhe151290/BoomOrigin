@@ -10,15 +10,19 @@ public class UIManager : MonoBehaviour
     Text Radius;
     [SerializeField]
     Text Speed;
+    [SerializeField]
+    Text TimeRemaining;
     // Start is called before the first frame update
     int amount;
     int radius;
     int speed;
+    int curenttime;
     void Start()
     {
         amount = 1;
         radius = 1;
         speed = 4;
+        curenttime= 180;
        
     }
 
@@ -26,6 +30,10 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         
+    }
+    public void SetTiming(float a){
+        curenttime = (int)(curenttime - a);
+        TimeRemaining.text =": " + curenttime;
     }
     public void SetScore()
     {
