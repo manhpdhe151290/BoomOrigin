@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 using System.Linq;
+using System;
 
 public class BombController : MonoBehaviour
 
@@ -28,12 +29,16 @@ public class BombController : MonoBehaviour
     public Tilemap destructibleTiles;
     public Destructible destructiblePrefab;
 
+    [SerializeField] private AudioSource ExplodeSoundEffect;
+    [SerializeField] private AudioSource BoomSoundEffect;
+
 
     // Start is called before the first frame update
     public void Wrapper()
     {
         if (bombsRemaining > 0)
         {
+            BoomSoundEffect.Play();
             StartCoroutine(PlaceBomb());
         }
     }
@@ -97,6 +102,7 @@ public class BombController : MonoBehaviour
     {
         if (length <= 0)
         {
+            ExplodeSoundEffect.Play();
             return;
         }
 
