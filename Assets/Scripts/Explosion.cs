@@ -5,7 +5,6 @@ public class Explosion : MonoBehaviour
     public AnimatedSpriteRenderer start;
     public AnimatedSpriteRenderer middle;
     public AnimatedSpriteRenderer end;
-
     public void SetActiveRenderer(AnimatedSpriteRenderer renderer)
     {
         start.enabled = renderer == start;
@@ -24,4 +23,12 @@ public class Explosion : MonoBehaviour
         Destroy(gameObject, seconds);
     }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            Debug.Log(PlayerController.instance.heart);
+            PlayerController.instance.heart--;
+        }
+    }
 }

@@ -16,5 +16,10 @@ public enum Enemy
 
 public enum Player
 {
+    HEART = 3,
+}
 
+public enum Game
+{
+    TIME_LIMIT = 180,
 }

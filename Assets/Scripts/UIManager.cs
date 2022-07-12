@@ -12,17 +12,19 @@ public class UIManager : MonoBehaviour
     Text Speed;
     [SerializeField]
     Text TimeRemaining;
+    [SerializeField]
+    public GameObject gameOverMenu;
     // Start is called before the first frame update
     int amount;
     int radius;
     int speed;
-    int curenttime;
+    public int curenttime;
     void Start()
     {
         amount = 1;
         radius = 1;
         speed = 4;
-        curenttime= 180;
+        curenttime= (int) Game.TIME_LIMIT;
        
     }
 

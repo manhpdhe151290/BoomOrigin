@@ -8,11 +8,16 @@ public class GameManager : MonoBehaviour
     public float elapsedTime = 0.0f;
     public int enemies = 0;
     public float countTime = 0f;
-      UIManager UIManager;
+    UIManager UIManager;
+
+    private void Start()
+    {
+        UIManager = FindObjectOfType<UIManager>();
+    }
     void spawnEnemy()
     {
         EnemyLevel1.Instance.spawnEnemy();
-
+        
     }
 
     private void Update()
@@ -24,7 +29,14 @@ public class GameManager : MonoBehaviour
            spawnEnemy();
            elapsedTime = 0.0f;
            enemies++;
-        //    UIManager.SetTiming(countTime);
+        }
+        if(countTime > 0.8f){
+            UIManager.SetTiming(countTime);
+            countTime = 0.0f;
+        }
+        if(UIManager.curenttime == 0 || PlayerController.instance.heart < 1)
+        {
+            GameOver();
         }
         
     }
@@ -47,8 +59,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void NewRound()
+    public void NewRound()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void GameOver()
+    {
+        UIManager.gameOverMenu.SetActive(true);
+        Time.timeScale = 0f;
     }
 }

@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
  [Header("Sprites")]
     public AnimatedSpriteRenderer spriteRendererDeath;
    public static PlayerController instance;
-
+    public int heart;
     private void Awake()
     {
         instance = this;
@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         movePoint.parent = null;
+        heart = (int) Player.HEART;
     }
 
     // Update is called once per frame
