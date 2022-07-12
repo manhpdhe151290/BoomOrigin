@@ -30,7 +30,7 @@ public class BombController : MonoBehaviour
     public Destructible destructiblePrefab;
 
     [SerializeField] private AudioSource ExplodeSoundEffect;
-    [SerializeField] private AudioSource BoomSoundEffect;
+    [SerializeField] private AudioSource BoomSoundEffect; 
 
 
     // Start is called before the first frame update
