@@ -9,10 +9,11 @@ public class GameManager : MonoBehaviour
     public int enemies = 0;
     public float countTime = 0f;
     UIManager UIManager;
-
+    private float isDeath = 0f;
     private void Start()
     {
         UIManager = FindObjectOfType<UIManager>();
+
     }
     void spawnEnemy()
     {
@@ -36,7 +37,15 @@ public class GameManager : MonoBehaviour
         }
         if(UIManager.curenttime == 0 || PlayerController.instance.heart < 1)
         {
-            GameOver();
+            if (isDeath == 0)
+            {
+                PlayerController.instance.DeathSequence();
+            }
+            if(isDeath > 2)
+            {
+                GameOver();
+            }
+            isDeath += Time.deltaTime;
         }
         
     }
@@ -61,7 +70,7 @@ public class GameManager : MonoBehaviour
 
     public void NewRound()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void GameOver()

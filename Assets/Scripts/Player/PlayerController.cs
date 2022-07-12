@@ -60,22 +60,20 @@ public class PlayerController : MonoBehaviour
 
 
     }
-      private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Explosion"))
-        {
-            DeathSequence();
-        }
-    }
+    //  private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.collider.CompareTag("Explosion"))
+    //    {
+    //        DeathSequence();
+    //    }
+    //}
 
 
-    private void DeathSequence()
+    public void DeathSequence()
     {
         enabled = false;
-        GetComponent<BombController>().enabled = false;
-        spriteRendererDeath.enabled = true;
-
-        Invoke(nameof(OnDeathSequenceEnded), 1.25f);
+        animator.SetTrigger("death");
+        //Invoke(nameof(OnDeathSequenceEnded), 1.25f);
     }
 
     private void OnDeathSequenceEnded()

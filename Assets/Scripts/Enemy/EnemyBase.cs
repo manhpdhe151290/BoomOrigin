@@ -20,7 +20,6 @@ public class EnemyBase : MonoBehaviour
 
     public IEnumerator MoveAlongPath(GameObject enemy)
     {
-        Debug.Log(level.EmptyTile.Count);
         Vector3 lastPosition = enemy.transform.position;
         Queue<Vector3Int> path = FindPath.Instance.FloodFill(new SavedTile { Position = tilemap.WorldToCell(lastPosition), Tile = null }, randomTile(), level);    
         while (path.Count > 0)

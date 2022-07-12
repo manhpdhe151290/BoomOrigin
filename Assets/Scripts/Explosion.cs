@@ -27,7 +27,6 @@ public class Explosion : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log(PlayerController.instance.heart);
             PlayerController.instance.heart--;
         }
     }

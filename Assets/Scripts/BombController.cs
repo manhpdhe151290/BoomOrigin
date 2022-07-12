@@ -102,7 +102,7 @@ public class BombController : MonoBehaviour
     {
         if (length <= 0)
         {
-            //ExplodeSoundEffect.Play();
+            ExplodeSoundEffect.Play();
             return;
         }
 

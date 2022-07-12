@@ -59,7 +59,24 @@ public class FindPath : MonoBehaviour
         List<SavedTile> xAxisLeft = emptyTiles.Where(item => item.Position.y == tile.Position.y && item.Position.x - 1 == tile.Position.x).ToList();
         List<SavedTile> yAxisUp = emptyTiles.Where(item => item.Position.y - 1 == tile.Position.y && item.Position.x == tile.Position.x).ToList();
         List<SavedTile> yAxisDown = emptyTiles.Where(item => item.Position.y + 1 == tile.Position.y && item.Position.x == tile.Position.x).ToList();
-        List<SavedTile> result = xAxisRight.Concat(xAxisLeft).Concat(yAxisDown).Concat(yAxisUp).ToList();
+        List<SavedTile> result = new List<SavedTile>();
+        if(xAxisRight.Count != 0)
+        {
+            result = result.Concat(xAxisRight).ToList();
+        }
+        if(xAxisLeft.Count != 0)
+        {
+            result = result.Concat(xAxisLeft).ToList();
+        }
+        if(yAxisUp.Count != 0)
+        {
+            result = result.Concat(yAxisUp).ToList();
+        }
+        if(yAxisDown.Count != 0)
+        {
+            result = result.Concat(yAxisDown).ToList();
+        }
+       // List<SavedTile> result = xAxisRight.Concat(xAxisLeft).Concat(yAxisDown).Concat(yAxisUp).ToList();
         return result;
     }
 }
