@@ -9,6 +9,7 @@ using System;
 public class BombController : MonoBehaviour
 
 {
+    public static BombController Instance;
     public Button yourButton;
     public GameObject bombPrefab;
 
@@ -30,9 +31,13 @@ public class BombController : MonoBehaviour
     public Destructible destructiblePrefab;
 
     [SerializeField] private AudioSource ExplodeSoundEffect;
-    [SerializeField] private AudioSource BoomSoundEffect; 
+    [SerializeField] private AudioSource BoomSoundEffect;
 
 
+    private void Awake()
+    {
+        Instance = this;
+    }
     // Start is called before the first frame update
     public void Wrapper()
     {
@@ -61,7 +66,7 @@ public class BombController : MonoBehaviour
         if (bombsRemaining > 0 && Input.GetKeyDown(inputKey))
         {
 
-            Vector3Int cell = tilemap.WorldToCell(new Vector3(player.transform.position.x, player.transform.position.y - 0.3f, player.transform.position.z));
+            Vector3Int cell = tilemap.WorldToCell(new Vector3(player.transform.position.x, player.transform.position.y - 0.2f, player.transform.position.z));
             Vector3 cellCenterPos = tilemap.GetCellCenterWorld(cell);
             var pos = bombs.SingleOrDefault(bomb => bomb.transform.position == cellCenterPos);
             if (pos == null)
@@ -72,30 +77,17 @@ public class BombController : MonoBehaviour
     }
     private IEnumerator PlaceBomb()
     {
-        Vector2 position = transform.position;
-        position.x = Mathf.Round(position.x);
-        // position.y = Mathf.Round(position.y);
-        Vector3Int cell = tilemap.WorldToCell(new Vector3(player.transform.position.x, player.transform.position.y - 0.3f, player.transform.position.z));
+        Vector3Int cell = tilemap.WorldToCell(new Vector3(player.transform.position.x, player.transform.position.y - 0.2f, player.transform.position.z));
         Vector3 cellCenterPos = tilemap.GetCellCenterWorld(cell);
 
         GameObject bomb = Instantiate(bombPrefab, cellCenterPos, Quaternion.identity);
         bombsRemaining--;
         yield return new WaitForSeconds(bombFuseTime);
-
-        // position = bomb.transform.position;
-        // position.x = Mathf.Round(position.x);
-        // position.y = Mathf.Round(position.y);
-        Explosion explosion = Instantiate(explosionPrefab, cellCenterPos, Quaternion.identity);
-        explosion.SetActiveRenderer(explosion.start);
-        explosion.DestroyAfter(explosionDuration);
-
-        Explode(cellCenterPos, Vector2.up, explosionRadius);
-        Explode(cellCenterPos, Vector2.down, explosionRadius);
-        Explode(cellCenterPos, Vector2.left, explosionRadius);
-        Explode(cellCenterPos, Vector2.right, explosionRadius);
-
-        Destroy(bomb.gameObject);
-        bombsRemaining++;
+        var pos = bombs.SingleOrDefault(bom => bom.transform.position == cellCenterPos);
+        if(pos != null)
+        {
+           Explose(cellCenterPos, bomb);
+        }
 
     }
     private void Explode(Vector2 cellCenterPos, Vector2 direction, int length)
@@ -140,6 +132,21 @@ public class BombController : MonoBehaviour
         bombsRemaining++;
     }
 
+    public void Explose(Vector3 cellCenterPos, GameObject bomb)
+    {
+        Explosion explosion = Instantiate(explosionPrefab, cellCenterPos, Quaternion.identity);
+        explosion.SetActiveRenderer(explosion.start);
+        explosion.DestroyAfter(explosionDuration);
+
+        Explode(cellCenterPos, Vector2.up, explosionRadius);
+        Explode(cellCenterPos, Vector2.down, explosionRadius);
+        Explode(cellCenterPos, Vector2.left, explosionRadius);
+        Explode(cellCenterPos, Vector2.right, explosionRadius);
+
+        Destroy(bomb.gameObject);
+        bombsRemaining++;
+    }
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Bomb"))
@@ -148,4 +155,10 @@ public class BombController : MonoBehaviour
         }
     }
 
+    public Vector3 GetCellCenterPos(GameObject bomb)
+    {
+        Vector3Int cell = tilemap.WorldToCell(bomb.transform.position);
+        Vector3 cellCenterPos = tilemap.GetCellCenterWorld(cell);
+        return cellCenterPos;
+    }
 }

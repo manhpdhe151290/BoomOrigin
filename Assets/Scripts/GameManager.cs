@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public float countTime = 0f;
     UIManager UIManager;
     private float isDeath = 0f;
+    private int totalLimit = 0;
     private void Start()
     {
         UIManager = FindObjectOfType<UIManager>();
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
            spawnEnemy();
            elapsedTime = 0.0f;
            enemies++;
+            totalLimit++;
         }
         if(countTime > 0.8f){
             UIManager.SetTiming(countTime);
@@ -37,6 +39,7 @@ public class GameManager : MonoBehaviour
         }
         if(UIManager.curenttime == 0 || PlayerController.instance.heart < 1)
         {
+
             if (isDeath == 0)
             {
                 PlayerController.instance.DeathSequence();

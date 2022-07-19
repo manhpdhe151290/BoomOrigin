@@ -11,6 +11,7 @@ public enum Enemy
 {
     LIMIT = 5,
     SPAWN_TIME = 4,
+    TOTAL_LIMIT = 20,
 
 }
 

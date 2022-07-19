@@ -14,22 +14,25 @@ public class PlayerController : MonoBehaviour
     public AnimatedSpriteRenderer spriteRendererDeath;
    public static PlayerController instance;
     public int heart;
+    private bool isDeath = false;
     private void Awake()
     {
         instance = this;
+        heart = (int)Player.HEART;
     }
     void Start()
     {
         movePoint.parent = null;
-        heart = (int) Player.HEART;
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
         
-        if (Vector3.Distance(transform.position, movePoint.position) <= .05f)
+        transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
+
+        if (Vector3.Distance(transform.position, movePoint.position) <= .05f && !isDeath)
         {
             if (Mathf.Abs(joystick.Horizontal) >= .2f)
             {
@@ -72,8 +75,19 @@ public class PlayerController : MonoBehaviour
     public void DeathSequence()
     {
         enabled = false;
-        animator.SetTrigger("death");
-        //Invoke(nameof(OnDeathSequenceEnded), 1.25f);
+        animator.SetBool("isDeath", true);
+    }
+
+    public IEnumerator CollisionEnemy(Collider2D player)
+    {
+        player.isTrigger = false;
+        animator.SetBool("isDeath", true);
+        isDeath = true;
+        yield return new WaitForSeconds(1);
+        isDeath = false;
+        animator.SetBool("isDeath", false);
+        yield return new WaitForSeconds(2);
+        player.isTrigger = true;
     }
 
     private void OnDeathSequenceEnded()
@@ -84,5 +98,6 @@ public class PlayerController : MonoBehaviour
 
 
     }
+
 
 }

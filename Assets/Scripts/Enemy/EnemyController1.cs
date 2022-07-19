@@ -33,16 +33,34 @@ public class EnemyController1 : MonoBehaviour
                 overRun = true;
             }
         }
-
-        
-        
-
     }
 
-    private void FixedUpdate()
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-       
+        if (collision.CompareTag("Player"))
+        {
+            StartCoroutine(PlayerController.instance.CollisionEnemy(collision));
+            PlayerController.instance.heart--;
+        }
+        if (collision.CompareTag("Explosion"))
+        {
+            StartCoroutine(Die());
+        }
     }
+
+    private IEnumerator Die()
+    {
+        gameObject.GetComponent<Renderer>().material.color = Color.black;
+        enabled = true;
+        yield return new WaitForSeconds(0.6f);
+        Destroy(gameObject);
+    }
+
+
+
+
+
 
 
 }
