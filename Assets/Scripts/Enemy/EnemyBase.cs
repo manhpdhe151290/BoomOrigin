@@ -21,7 +21,7 @@ public class EnemyBase : MonoBehaviour
     public IEnumerator MoveAlongPath(GameObject enemy)
     {
         Vector3 lastPosition = enemy.transform.position;
-        Queue<Vector3Int> path = FindPath.Instance.FloodFill(new SavedTile { Position = tilemap.WorldToCell(lastPosition), Tile = null }, randomTile(), level);    
+        Queue<Vector3Int> path = FindPath.Instance.FloodFill(new SavedTile { Position = tilemap.WorldToCell(lastPosition), Tile = null }, randomTile(), level);
         while (path.Count > 0)
         {
             Vector3Int nextTile = path.Dequeue();       
@@ -62,5 +62,12 @@ public class EnemyBase : MonoBehaviour
     {
         var totalIndex = level.EmptyTile.Count;
         return level.EmptyTile[Random.Range(0, totalIndex)];
+    }
+    public IEnumerator Die(GameObject enemy)
+    {
+        enemy.GetComponent<Renderer>().material.color = Color.black;
+        enabled = true;
+        yield return new WaitForSeconds(0.6f);
+        Destroy(enemy);
     }
 }
