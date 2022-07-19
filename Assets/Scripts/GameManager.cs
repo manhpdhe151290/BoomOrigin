@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public float elapsedTime = 0.0f;
     public int enemies = 0;
     public float countTime = 0f;
+    public int level = 2;
     UIManager UIManager;
     private float isDeath = 0f;
     private int totalLimit = 0;
@@ -18,8 +19,14 @@ public class GameManager : MonoBehaviour
     }
     void spawnEnemy()
     {
-        EnemyLevel1.Instance.spawnEnemy();
-        
+        if(level == 1)
+        {
+            EnemyLevel1.Instance.spawnEnemy();
+        }
+        if(level == 2)
+        {
+            GrandFather.Instance.spawnEnemy();
+        }
     }
 
     private void Update()
