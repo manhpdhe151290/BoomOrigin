@@ -108,9 +108,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadRound1()
     {
-        TileMapManager.Instance.LoadMap(1);   
-        level = 1;
-        EnemyLevel1.Instance.level = Resources.Load<ScriptableLevel>($"Levels/Level {level}");
+        ResetRound(1);
         UIManager.startMenu.SetActive(false);
         UIManager.countMenu.SetActive(true);
         StartCoroutine(CountDownToStart());
@@ -118,12 +116,10 @@ public class GameManager : MonoBehaviour
 
     public void LoadRound2()
     {
-        TileMapManager.Instance.LoadMap(2);
-        level = 2;
-        EnemyLevel1.Instance.level = Resources.Load<ScriptableLevel>($"Levels/Level {level}");
+
+        ResetRound(2);
         UIManager.startMenu.SetActive(false);
         UIManager.countMenu.SetActive(true);
-       
         StartCoroutine(CountDownToStart());
     }
 
@@ -149,6 +145,14 @@ public class GameManager : MonoBehaviour
 
         isStart = true;
 
+    }
+    private void ResetRound(int levelIndex)
+    {
+        TileMapManager.Instance.LoadMap(levelIndex);
+        level = levelIndex;
+        EnemyLevel1.Instance.level = Resources.Load<ScriptableLevel>($"Levels/Level {level}");
+        UIManager.curenttime = (int) Game.TIME_LIMIT;
+        PlayerController.instance.heart = (int) Player.HEART;
     }
 
 }
