@@ -13,55 +13,62 @@ public class TileMapManager : MonoBehaviour
         ;
     [SerializeField] private int _levelIndex;
 
-    public void SaveMap()
+
+    public static TileMapManager Instance;
+    //public void SaveMap()
+    //{
+    //    var newLevel = ScriptableObject.CreateInstance<ScriptableLevel>();
+
+    //    newLevel.LevelIndex = _levelIndex;
+    //    newLevel.name = $"Level {_levelIndex}";
+
+    //    newLevel.GroundTiles = GetTilesFromMap(_groundMap).ToList();
+    //    newLevel.UnitTiles = GetTilesFromMap(_unitMap).ToList();
+    //    newLevel.FrontOfPlayer = GetTilesFromMap(_frontOfPlayer).ToList();
+    //    newLevel.GrondOverlay = GetTilesFromMap(_groundOverlay).ToList();
+    //    newLevel.Obstacle = GetTilesFromMap(_obstacle).ToList();
+
+    //    List<SavedTile> newEmptyTile = new List<SavedTile>();
+
+    //    for (int i = 0; i < newLevel.GroundTiles.Count; i++)
+    //    {
+    //        var obstaclePosition = newLevel.Obstacle.SingleOrDefault(o => o.Position == newLevel.GroundTiles[i].Position);
+    //        var colliderPosition = newLevel.UnitTiles.SingleOrDefault(o => o.Position == newLevel.GroundTiles[i].Position);
+    //        //if(colliderPosition != null)
+    //        //{
+    //        //    break;
+    //        //}  
+    //        if (obstaclePosition == null && colliderPosition == null)
+    //        {
+    //            newEmptyTile.Add(new SavedTile() { Tile = null, Position = newLevel.GroundTiles[i].Position });
+    //        }
+    //    }
+    //    newLevel.EmptyTile = newEmptyTile;
+
+
+    //    ScriptableObjectUtility.SaveLevelFile(newLevel);
+
+    //    IEnumerable<SavedTile> GetTilesFromMap(Tilemap map)
+    //    {
+    //        foreach (var pos in map.cellBounds.allPositionsWithin)
+    //        {
+    //            if (map.HasTile(pos))
+    //            {
+    //                var levelTile = map.GetTile<LevelTile>(pos);
+
+    //                yield return new SavedTile()
+    //                {
+    //                    Position = pos,
+    //                    Tile = levelTile
+    //                };
+    //            }
+    //        }
+    //    }
+    //}
+
+    private void Awake()
     {
-        var newLevel = ScriptableObject.CreateInstance<ScriptableLevel>();
-
-        newLevel.LevelIndex = _levelIndex;
-        newLevel.name = $"Level {_levelIndex}";
-
-        newLevel.GroundTiles = GetTilesFromMap(_groundMap).ToList();
-        newLevel.UnitTiles = GetTilesFromMap(_unitMap).ToList();
-        newLevel.FrontOfPlayer = GetTilesFromMap(_frontOfPlayer).ToList();
-        newLevel.GrondOverlay = GetTilesFromMap(_groundOverlay).ToList();
-        newLevel.Obstacle = GetTilesFromMap(_obstacle).ToList();
-
-        List<SavedTile> newEmptyTile = new List<SavedTile>();
-
-        for (int i = 0; i < newLevel.GroundTiles.Count; i++)
-        {
-            var obstaclePosition = newLevel.Obstacle.SingleOrDefault(o => o.Position == newLevel.GroundTiles[i].Position);
-            var colliderPosition = newLevel.UnitTiles.SingleOrDefault(o => o.Position == newLevel.GroundTiles[i].Position);
-            //if(colliderPosition != null)
-            //{
-            //    break;
-            //}  
-            if (obstaclePosition == null && colliderPosition == null)
-            {
-                newEmptyTile.Add(new SavedTile() { Tile = null, Position = newLevel.GroundTiles[i].Position });
-            }
-        }
-        newLevel.EmptyTile = newEmptyTile;
-
-
-        ScriptableObjectUtility.SaveLevelFile(newLevel);
-
-        IEnumerable<SavedTile> GetTilesFromMap(Tilemap map)
-        {
-            foreach (var pos in map.cellBounds.allPositionsWithin)
-            {
-                if (map.HasTile(pos))
-                {
-                    var levelTile = map.GetTile<LevelTile>(pos);
-                    
-                    yield return new SavedTile()
-                    {
-                        Position = pos,
-                        Tile = levelTile
-                    };
-                }
-            }
-        }
+        Instance = this;
     }
 
     public void ClearMap()
@@ -74,12 +81,12 @@ public class TileMapManager : MonoBehaviour
         }
     }
 
-    public void LoadMap()
+    public void LoadMap(int levelIndex)
     {
-        var level = Resources.Load<ScriptableLevel>($"Levels/Level {_levelIndex}");
+        var level = Resources.Load<ScriptableLevel>($"Levels/Level {levelIndex}");
         if (level == null)
         {
-            Debug.LogError($"Level {_levelIndex} does not exist.");
+            Debug.LogError($"Level {levelIndex} does not exist.");
             return;
         }
 

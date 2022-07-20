@@ -13,7 +13,13 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     Text TimeRemaining;
     [SerializeField]
+    Text countdown;
+    [SerializeField]
     public GameObject gameOverMenu;
+    [SerializeField]
+    public GameObject startMenu;
+    [SerializeField]
+    public GameObject countMenu;
     // Start is called before the first frame update
     int amount;
     int radius;
@@ -53,4 +59,10 @@ public class UIManager : MonoBehaviour
         speed++;
     Speed.text = ": " + speed;
     }
+
+    public void setCountdown(string time)
+    {
+        countdown.text = time.ToString();
+    }
+
 }

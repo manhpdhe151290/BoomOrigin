@@ -9,30 +9,16 @@ public class EnemyController1 : MonoBehaviour
     private bool isInchaseRange;
     public float checkRadius;
     public LayerMask whatIsPlayer;
-    bool overRun;
+   
     void Start()
     {
-        overRun = true;
+        StartCoroutine(EnemyLevel1.Instance.MoveAlongPath(gameObject, checkRadius, whatIsPlayer));
     }
 
     // Update is called once per frame
     void Update()
     {
-        isInchaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
-        if (overRun && isInchaseRange)
-        {
-            StartCoroutine(EnemyLevel1.Instance.ChasePlayer(gameObject));
-            overRun = false;
-        }
-        if (overRun)
-        {
-            StartCoroutine(EnemyLevel1.Instance.MoveAlongPath(gameObject));
-            overRun = false;
-            if (isInchaseRange)
-            {
-                overRun = true;
-            }
-        }
+       
     }
 
 
@@ -46,6 +32,7 @@ public class EnemyController1 : MonoBehaviour
         if (collision.CompareTag("Explosion"))
         {
             StartCoroutine(Die());
+            GameManager.instance.enemies--;
         }
     }
 

@@ -5,10 +5,11 @@ using UnityEngine;
 public class GrandFatherController : MonoBehaviour
 {
     bool overRun;
+    bool isDeath;
     // Start is called before the first frame update
     void Start()
     {
-       
+       isDeath = false;
         overRun = true;
     }
 
@@ -17,7 +18,7 @@ public class GrandFatherController : MonoBehaviour
     {
         if (overRun)
         {
-            StartCoroutine(GrandFather.Instance.MoveAlongPath(gameObject));
+            StartCoroutine(GrandFather.Instance.MoveAlongPath(gameObject, 0f, 0));
             overRun = false;
         }
     }
@@ -29,13 +30,14 @@ public class GrandFatherController : MonoBehaviour
             StartCoroutine(PlayerController.instance.CollisionEnemy(collision));
             PlayerController.instance.heart--;
         }
-        if (collision.CompareTag("Explosion"))
+        if (collision.CompareTag("Explosion") && !isDeath)
         {
             StartCoroutine(GrandFather.Instance.Die(gameObject));
+            GameManager.instance.enemies--;
             Father.Instance.spawnEnemy();
             Father.Instance.spawnEnemy();
+            isDeath = true;
         }
     }
-
 
 }
