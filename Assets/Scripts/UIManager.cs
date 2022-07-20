@@ -13,6 +13,9 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     Text TimeRemaining;
     [SerializeField]
+    
+    Text Heart;
+    [SerializeField]
     Text countdown;
     [SerializeField]
     public GameObject gameOverMenu;
@@ -24,12 +27,14 @@ public class UIManager : MonoBehaviour
     int amount;
     int radius;
     int speed;
+    int heart;
     public int curenttime;
     void Start()
     {
         amount = 1;
         radius = 1;
         speed = 4;
+        heart = 2;
         curenttime= (int) Game.TIME_LIMIT;
        
     }
@@ -47,6 +52,12 @@ public class UIManager : MonoBehaviour
     {
         amount++;
         bombAmount.text =": " + amount;
+    
+    }
+    public void SetHeart()
+    {
+        heart--;
+        Heart.text =": " + heart;
     
     }
     public void SetSpawn()

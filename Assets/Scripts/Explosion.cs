@@ -5,6 +5,11 @@ public class Explosion : MonoBehaviour
     public AnimatedSpriteRenderer start;
     public AnimatedSpriteRenderer middle;
     public AnimatedSpriteRenderer end;
+      UIManager UIManager;
+      void Start()
+    {
+         UIManager =FindObjectOfType<UIManager>();
+    }
     public void SetActiveRenderer(AnimatedSpriteRenderer renderer)
     {
         start.enabled = renderer == start;
@@ -28,6 +33,7 @@ public class Explosion : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerController.instance.heart--;
+            UIManager.SetHeart();
         }
     }
 }
