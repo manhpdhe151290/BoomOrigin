@@ -13,6 +13,12 @@ public class EnemyBase : MonoBehaviour
     public Tilemap tilemap;
     public Animator animator;
     public float _speedFactor = 1f;
+    public static EnemyBase Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
     void Start()
     {
         level = Resources.Load<ScriptableLevel>($"Levels/Level {GameManager.instance.level}");
@@ -49,19 +55,22 @@ public class EnemyBase : MonoBehaviour
 
     public IEnumerator ChasePlayer(GameObject enemy)
     {
-        Vector3 lastPosition = enemy.transform.position;
-        SavedTile enemySavedTile = new SavedTile { Tile = null, Position = tilemap.WorldToCell(lastPosition) };
-        SavedTile playerSavedTile = new SavedTile { Tile = null, Position = tilemap.WorldToCell(PlayerController.instance.transform.position) };
-        Queue<Vector3Int> path = FindPath.Instance.FloodFill(enemySavedTile, playerSavedTile, level);
-        while (path.Count > 0)
+       if(enemy != null)
         {
-            Vector3Int nextTile = path.Dequeue();
-            Vector3 cellCenterPos = tilemap.GetCellCenterWorld(nextTile);
-            enemy.transform.position = Vector3.MoveTowards(lastPosition, cellCenterPos, _speedFactor * Time.deltaTime);
-            yield return new WaitForSeconds(0.5f / _speedFactor);
-            lastPosition = cellCenterPos;
+            Vector3 lastPosition = enemy.transform.position;
+            SavedTile enemySavedTile = new SavedTile { Tile = null, Position = tilemap.WorldToCell(lastPosition) };
+            SavedTile playerSavedTile = new SavedTile { Tile = null, Position = tilemap.WorldToCell(PlayerController.instance.transform.position) };
+            Queue<Vector3Int> path = FindPath.Instance.FloodFill(enemySavedTile, playerSavedTile, level);
+            while (path.Count > 0)
+            {
+                Vector3Int nextTile = path.Dequeue();
+                Vector3 cellCenterPos = tilemap.GetCellCenterWorld(nextTile);
+                enemy.transform.position = Vector3.MoveTowards(lastPosition, cellCenterPos, _speedFactor * Time.deltaTime);
+                yield return new WaitForSeconds(0.5f / _speedFactor);
+                lastPosition = cellCenterPos;
+            }
+            StartCoroutine(ChasePlayer(enemy));
         }
-        StartCoroutine(ChasePlayer(enemy));
     }
 
     public void spawnEnemy()
@@ -71,7 +80,7 @@ public class EnemyBase : MonoBehaviour
         Instantiate<GameObject>(gamePrefab, cellCenterPos, Quaternion.identity);    
     }
 
-    SavedTile randomTile()
+    public SavedTile randomTile()
     {
         var totalIndex = level.EmptyTile.Count;
         return level.EmptyTile[Random.Range(0, totalIndex)];
@@ -79,7 +88,6 @@ public class EnemyBase : MonoBehaviour
     public IEnumerator Die(GameObject enemy)
     {
         enemy.GetComponent<Renderer>().material.color = Color.black;
-        
         enabled = true;
         yield return new WaitForSeconds(0.6f);
         Destroy(enemy);

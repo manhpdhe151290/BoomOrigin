@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance; 
+    public static GameManager instance;
     public GameObject[] players;
     public float elapsedTime = 0.0f;
     public int enemies = 0;
@@ -14,12 +14,18 @@ public class GameManager : MonoBehaviour
     private float isDeath = 0f;
     private int totalEnemy = 0;
     private bool isStart;
+    GameObject[] enemy;
+    GameObject[] items;
     [SerializeField]
     AudioSource readySound;
+    [SerializeField]
+    AudioSource bgSound;
+    [SerializeField]
+    AudioSource winSound;
     private void Awake()
     {
         instance = this;
-       
+
     }
     private void Start()
     {
@@ -35,23 +41,34 @@ public class GameManager : MonoBehaviour
         {
             EnemyLevel1.Instance.spawnEnemy();
         }
-        if(level == 2)
+        if (level == 2)
         {
             GrandFather.Instance.spawnEnemy();
+        }
+        if (level == 3)
+        {
+            EnemyLevel3.Instance.spawnEnemy();
         }
     }
 
     private void Update()
     {
-       
-        if (isStart) {
-           
+
+        if (isStart)
+        {
+
             elapsedTime += Time.deltaTime;
             countTime += Time.deltaTime;
-            if (elapsedTime > (float)Enemy.SPAWN_TIME && enemies < (int)Enemy.LIMIT)
+            if (elapsedTime > (float)Enemy.SPAWN_TIME && enemies < (int)Enemy.LIMIT && totalEnemy < (int)Enemy.TOTAL_LIMIT)
             {
-               
                 spawnEnemy();
+            }
+            enemy = GameObject.FindGameObjectsWithTag("Enemy");
+            if (enemy.Length == 0 && totalEnemy == (int)Enemy.TOTAL_LIMIT)
+            {
+                bgSound.Stop();
+                winSound.Play();
+                StartCoroutine(WinRound());
             }
             if (countTime > 0.8f)
             {
@@ -67,16 +84,15 @@ public class GameManager : MonoBehaviour
                 }
                 if (isDeath > 2)
                 {
-                    
+
                     GameOver();
-                    isStart = false;    
+                    isStart = false;
                 }
                 isDeath += Time.deltaTime;
             }
         }
-        
     }
-    
+
     public void CheckGameState()
     {
         int aliveCount = 0;
@@ -104,10 +120,12 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         UIManager.gameOverMenu.SetActive(true);
+        isStart = false;
     }
 
     public void LoadRound1()
     {
+        EnemyLevel1.Instance.level = Resources.Load<ScriptableLevel>($"Levels/Level {1}");
         ResetRound(1);
         UIManager.startMenu.SetActive(false);
         UIManager.countMenu.SetActive(true);
@@ -120,12 +138,24 @@ public class GameManager : MonoBehaviour
         ResetRound(2);
         UIManager.startMenu.SetActive(false);
         UIManager.countMenu.SetActive(true);
+        UIManager.winMenu.SetActive(false);
+        StartCoroutine(CountDownToStart());
+    }
+
+    public void LoadRound3()
+    {
+        EnemyLevel3.Instance.level = Resources.Load<ScriptableLevel>($"Levels/Level {3}");
+        ResetRound(3);
+        UIManager.startMenu.SetActive(false);
+        UIManager.countMenu.SetActive(true);
+        UIManager.winMenu.SetActive(false);
+        UIManager.winMenu2.SetActive(false);
         StartCoroutine(CountDownToStart());
     }
 
     IEnumerator CountDownToStart()
     {
-        
+
         Dictionary<int, string> map = new Dictionary<int, string>();
         map[2] = "ARE";
         map[1] = "YOU";
@@ -144,15 +174,41 @@ public class GameManager : MonoBehaviour
         UIManager.countMenu.SetActive(false);
 
         isStart = true;
+        bgSound.Play();
 
     }
     private void ResetRound(int levelIndex)
     {
         TileMapManager.Instance.LoadMap(levelIndex);
         level = levelIndex;
-        EnemyLevel1.Instance.level = Resources.Load<ScriptableLevel>($"Levels/Level {level}");
-        UIManager.curenttime = (int) Game.TIME_LIMIT;
-        PlayerController.instance.heart = (int) Player.HEART;
+
+
+        UIManager.curenttime = (int)Game.TIME_LIMIT;
+        PlayerController.instance.heart = (int)Player.HEART;
+        totalEnemy = 0;
+        PlayerController.instance.movePoint.transform.position = new Vector3(-6.1f, -4.25f, 0);
     }
 
+    private IEnumerator WinRound()
+    {
+        items = GameObject.FindGameObjectsWithTag("Item");
+        foreach (GameObject item in items)
+        {
+            Destroy(item);
+        }
+        yield return new WaitForSeconds(1f);
+        if (level == 1)
+        {
+            UIManager.winMenu.SetActive(true);
+        }
+        else if (level == 2)
+        {
+            UIManager.winMenu2.SetActive(true);
+        }
+        else if (level == 3)
+        {
+            UIManager.win.SetActive(true);
+        }
+        isStart = false;
+    }
 }

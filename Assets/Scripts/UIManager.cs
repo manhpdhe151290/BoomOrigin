@@ -20,6 +20,12 @@ public class UIManager : MonoBehaviour
     public GameObject startMenu;
     [SerializeField]
     public GameObject countMenu;
+    [SerializeField]
+    public GameObject winMenu;
+    [SerializeField]
+    public GameObject winMenu2;
+    [SerializeField]
+    public GameObject win;
     // Start is called before the first frame update
     int amount;
     int radius;
